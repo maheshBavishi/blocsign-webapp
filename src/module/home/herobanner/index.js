@@ -16,7 +16,7 @@ export default function Herobanner() {
             Best Way to Signature Add in Document
             </h1>
             <p className='animate__animated animate__slideInUp wow' data-wow-offset="250">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+              Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the {`industry s`} standard 
               dummy text 
             </p>
             <div className='animate__animated animate__slideInUp wow' data-wow-offset="300">

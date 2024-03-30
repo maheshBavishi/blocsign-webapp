@@ -12,7 +12,7 @@ export default function Downloadapp() {
             <div className={styles.text}>
                 <h4>Download app to easily sign any documents</h4>
                 <p>
-                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the {`industry's`} standard 
                     dummy text 
                 </p>
                 <div className={styles.buttonAlignment}>
@@ -21,7 +21,7 @@ export default function Downloadapp() {
             </div>
             </div>
             <div className={styles.img}>
-                <img src={DocumentImage}/>
+                <img src={DocumentImage} alt='DocumentImage'/>
             </div>
         </div>
       </div>

@@ -86,7 +86,7 @@ export default function Reviewsection() {
                 <div className={styles.title}>
                     <span className='animate__animated animate__slideInUp wow' data-wow-offset="200">REVIEW</span>
                     <h6 className='animate__animated animate__slideInUp wow' data-wow-offset="220">Testimonials</h6>
-                    <p className='animate__animated animate__slideInUp wow' data-wow-offset="250">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className='animate__animated animate__slideInUp wow' data-wow-offset="250">Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry.</p>
                 </div>
                 <div className={styles.reviewslider}>
                     <Slider {...settings}>
@@ -105,7 +105,7 @@ export default function Reviewsection() {
                             </div>
                             <div className={styles.profiledetails}>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the {`industry s`} standard
                                     dummy text
                                 </p>
                             </div>
@@ -128,7 +128,7 @@ export default function Reviewsection() {
                             </div>
                             <div className={styles.profiledetails}>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the {`industry s`} standard
                                     dummy text
                                 </p>
                             </div>

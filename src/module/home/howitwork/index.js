@@ -8,7 +8,7 @@ export default function Howitwork() {
         <div className={styles.title}>
             <span className='animate__animated animate__slideInUp wow' data-wow-offset="200">EASY STEPS</span>
             <h2 className='animate__animated animate__slideInUp wow' data-wow-offset="220">How it works</h2>
-            <p className='animate__animated animate__slideInUp wow' data-wow-offset="250">Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry.</p>
+            <p className='animate__animated animate__slideInUp wow' data-wow-offset="250">Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div className={styles.grid}>
             <div className={styles.griditems}>
@@ -17,7 +17,7 @@ export default function Howitwork() {
                     <img src={UserIcon}alt='UserIcon'/>
                 </div>
                 <p>
-                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the {`industry`}
                     s standard dummy text 
                 </p>
                 <div className={styles.count}>01</div>
@@ -28,7 +28,7 @@ export default function Howitwork() {
                     <img src={UserIcon}alt='UserIcon'/>
                 </div>
                 <p>
-                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the {`industry`}
                     s standard dummy text 
                 </p>
                 <div className={styles.count}>02</div>
@@ -39,7 +39,7 @@ export default function Howitwork() {
                     <img src={UserIcon}alt='UserIcon'/>
                 </div>
                 <p>
-                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                    Lorem {`Ipsum is`} simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the {`industry`}
                     s standard dummy text 
                 </p>
                 <div className={styles.count}>03</div>
