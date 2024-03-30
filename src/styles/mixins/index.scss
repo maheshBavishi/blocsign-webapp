@@ -1,0 +1,41 @@
+@import "breakpoints";
+@import "typography";
+@import "input";
+@import "layout";
+
+
+.container {
+    max-width: calc(1200px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-md {
+    max-width: calc(1100px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-md2 {
+    max-width: calc(1108px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-md3 {
+    max-width: calc(870px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-md4 {
+    max-width: calc(1070px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-md5 {
+    max-width: calc(1195px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+}

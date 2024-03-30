@@ -1,0 +1,117 @@
+@import '../../../styles/mixins/index.scss';
+
+.herobannerDesign {
+    position: relative;
+    overflow: hidden;
+    
+
+    &::before {
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 499px;
+        height: 499px;
+        content: '';
+        border-radius: 499px;
+        background: linear-gradient(180deg, rgba(82, 114, 251, 0.30) 0%, rgba(127, 102, 233, 0.30) 51.5%, rgba(154, 89, 212, 0.30) 100%);
+        filter: blur(100px);
+        z-index: -1;
+    }
+
+    .herobannerAlignment {
+        padding-left: max(80px, calc((100vw - 1200px) / 2));
+
+        @include breakpoint("md-max") {
+            padding-left: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 577px;
+            gap: 20px;
+            align-items: center;
+
+            @include breakpoint("md-max") {
+                grid-template-columns: repeat(2 , 1fr);
+            }
+            @include breakpoint("sm-max") {
+                grid-template-columns: repeat(1 , 1fr);
+                gap: 40px;
+                padding: 60px 0 0 0;
+            }
+
+            .relative {
+                position: relative;
+
+                .arrowIcon {
+                    position: absolute;
+                    bottom: 20%;
+                    left: -20%;
+
+
+                    @include breakpoint("md-max") {
+                        bottom: -7%;
+                        left: 5%;
+                    }
+
+                    @include breakpoint("sm-max") {
+                        display: none;
+                    }
+                }
+            }
+
+            p {
+                color: #808B9A;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                margin: 0 0 44px 0;
+                max-width: 553px;
+            
+                
+            }
+
+            .buttonAlignment {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                @include breakpoint("sm-max") {
+                    gap: 20px;
+                }
+
+                img{
+                    cursor: pointer;
+                
+                    @include breakpoint("sm-max") {
+                        height: 50px;
+                    }
+                }
+            }
+
+            h1 {
+                max-width: 497px;
+                color: #39434F;
+                font-family: "Noto Sans";
+                font-size: 52px;
+                margin: 0 0 20px 0;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 70px;
+                
+                @include breakpoint("md-max") {
+                    font-size: 32px;
+                    line-height: 42px;
+                    max-width: 80%;
+                }
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

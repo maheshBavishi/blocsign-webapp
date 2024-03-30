@@ -1,0 +1,95 @@
+@import '../../../styles/mixins/index.scss';
+
+.downloadappAllContentAlignment {
+    padding: 0 0 100px 0;
+
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 405px;
+        gap: 11px;
+        border-radius: 20px;
+        background: #D3DBFE;
+        padding: 47px 21px 0 80px;
+        align-items: flex-end;
+
+        @include breakpoint("md-max") {
+            padding: 40px 40px 0 40px;
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+
+
+        @include breakpoint("sm-max") {
+            padding: 30px 30px 0 30px;
+        }
+
+        .buttonAlignment {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+
+            @include breakpoint("sm-max") {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            img {
+                cursor: pointer;
+
+                @include breakpoint("sm-max") {
+                    height: 50px;
+                }
+                
+            }
+        }
+
+        .text {
+            padding: 0 0 78px 0;
+
+
+            @include breakpoint("sm-max") {
+                padding: 0;
+            }
+
+            h4 {
+                color: #39434F;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 55px;
+
+                @include breakpoint("sm-max") {
+                    font-size: 32px;
+                    line-height: 48px;
+                    margin: 0 0 10px 0;
+                }
+            }
+
+            p {
+                color: #39434F;
+                font-size: 16px;
+                margin: 0 0 40px 0;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+
+
+                @include breakpoint("sm-max") {
+                    font-size: 14px;
+                    line-height: 26px;
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+
+        .img {
+            img {
+                width: 100%;
+                display: block;
+
+            }
+        }
+    }
+}

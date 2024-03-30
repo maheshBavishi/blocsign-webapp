@@ -1,0 +1,205 @@
+@import '../../../styles/mixins/index.scss';
+
+.reviewsectionAllContentalignment {
+    margin: 140px 0 197px 0;
+    overflow: hidden;
+
+    @include breakpoint("md-max") {
+        margin: 80px 0;
+    }
+
+    .title {
+        padding: 0 0 80px 0;
+
+        @include breakpoint("md-max") {
+            padding: 0 0 60px 0;
+        }
+
+
+        span {
+            display: block;
+            text-align: center;
+            color: #5272FB;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2px;
+
+            @include breakpoint("md-max") {
+                font-size: 18px;
+            }
+
+            @include breakpoint("sm-max") {
+                font-size: 16px;
+                padding: 0 0 10px 0;
+            }
+        }
+
+        h6 {
+            color: #39434F;
+            margin: 0 0 10px 0;
+            font-size: 52px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 70px;
+
+            @include breakpoint("md-max") {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+
+        p {
+            text-align: center;
+            color: #808B9A;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include breakpoint("sm-max") {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    :global(.slick-slide) {
+        padding: 0 25px;
+
+        @include breakpoint("md-max") {
+            padding: 0 10px;
+        } 
+    }
+
+    :global(.slick-list) {
+        margin: 0 -25px;
+
+        @include breakpoint("md-max") {
+            margin: 0 -10px;
+        }
+    }
+
+
+    .reviewslider {
+        .box {
+            background-image: url('/assets/images/review-card.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            padding: 30px;
+            position: relative;
+
+            @include breakpoint("md-max") {
+                border-radius: 12px;
+            }
+
+            .quate {
+                position: absolute;
+                right: 10px;
+                bottom: -1px;
+
+                p {
+                    color: #5272FB;
+                    font-size: 70px;
+                    font-style: normal;
+                    font-family: "Niramit", sans-serif;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+
+            .profiledetails {
+                p {
+                    color: #808B9A;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    max-width: 338px;
+                    line-height: 24px;
+                }
+            }
+
+            .profilegrid {
+                display: grid;
+                grid-template-columns: 70px 1fr;
+                gap: 12px;
+                padding: 0 0 20px 0;
+
+                .rating {
+                    padding: 4px 0 0 0;
+
+                    img {
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+
+                .text {
+                    span {
+                        color: #808B9A;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    p {
+                        color: #39434F;
+                        font-family: "Noto Sans";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+
+                .img {
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.leftArrowslider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -80px;
+    z-index: 99;
+
+    @include breakpoint("sm-max") {
+        left: -5px;
+    }
+
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.rightArrowslider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -80px;
+    z-index: 99;
+
+    @include breakpoint("sm-max") {
+        right: -5px;
+    }
+
+    img {
+        cursor: pointer;
+        transform: rotate(180deg);
+    }
+}
